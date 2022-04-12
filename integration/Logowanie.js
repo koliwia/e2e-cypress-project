@@ -94,7 +94,6 @@ describe('User login', () => {
             .type('WrongPassword')
             .blur()
             .getButtonByType('submit')
-            .should('be.disabled')
-            
+            .should('be.disabled');
     });
 });
