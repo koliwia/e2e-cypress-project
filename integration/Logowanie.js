@@ -81,7 +81,7 @@ describe('User login', () => {
             .its('0.contentDocument.body')
             .should('contain', 'Możesz zmienić hasło klikając');
     });
-    it.only('should not log in an inactive user', () => {
+    it('should not log in an inactive user', () => {
         cy.visit('/')
             .getElement('nav', 'login')
             .click()
